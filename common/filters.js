@@ -27,48 +27,7 @@ const bidTypeFilter = function(val){
 			break;
 	}
 }
-//竞价结果
-const bidResultFilter = function(val){
-	if(val == 0){
-		return '流标'
-	}else if(val == 1){
-		return '中标'
-	}else{
-		return ''
-	}
-}
-//资格审核状态
-const qualAuditFilter = function(val){
-	if(val == 0){
-		return '流标'
-	}else if(val == 1){
-		return '中标'
-	}else{
-		return ''
-	}
-}
 
-//保证金审核状态
-const siteAuditFilter = function(val){
-	if(val == 0){
-		return '未支付'
-	}else if(val == 1){
-		return '支付中'
-	}else if(val == 2){
-		return '待审核'
-	}else if(val == 3){
-		return '已通过'
-	}else if(val == 4){
-		return '不通过'
-	}else if(val == 5){
-		return '已退还'
-	}else{
-		return ''
-	}
-}
 export default{
-	bidTypeFilter,
-	bidResultFilter,
-	siteAuditFilter,
-	qualAuditFilter
+	bidTypeFilter
 }
